@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(248, 250, 255);
+}
+
+:global(#app) {
+    height: 100%;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}

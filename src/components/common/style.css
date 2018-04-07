@@ -1,0 +1,163 @@
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100000;
+    background: rgba(0,0,0,0.38);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: rgba(252,252,252,0.80);
+    border-radius: 6px;
+    width: 270px;
+    padding-top: 10px;
+}
+
+.title {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #030303;
+}
+
+.message {
+    font-size: 16px;
+    color: #333;
+    padding-left: 32px;
+    padding-top: 20px;
+}
+
+.operate {
+    height: 45px;
+    border-top: 1px solid rgba(77,77,77,0.78);
+    overflow: hidden;
+}
+
+.operate button {
+    height: 100%;
+    font-size: 16px;
+    background: transparent;
+    text-align: center;
+}
+
+.operate button:last-child {
+    color: #0076FF;
+}
+
+.operate button:nth-child(2) {
+    border-left: 1px solid rgba(77,77,77,0.78);
+}
+
+.back {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+.back img {
+    width: 60%;
+    height: 60%;
+}
+
+.whiteSpace {
+    height: 10px;
+}
+
+.accordion {
+    background: #fff;
+}
+
+.accordion .header {
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.accordion .header i {
+    background: url('../../assets/arrow.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+    background-size: 100% 100%;
+    display: inline-block;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.accordion .content {
+    overflow: hidden;
+}
+
+@keyframes open {
+    from { transform: rotate(90deg) }
+    to { transform: rotate(270deg) }
+}
+
+@keyframes close {
+    from { transform: rotate(270deg) }
+    to { transform: rotate(90deg) }
+}
+
+.open {
+    animation: open 0.2s ease forwards;
+}
+
+.close {
+    animation: close 0.2s ease forwards;
+}
+
+@keyframes show {
+    from { opacity: 0; height: 0 }
+    to { opacity: 1; height: auto; }
+}
+
+@keyframes hide {
+    from { opacity: 1; height: auto }
+    to { opacity: 0; height: 0 }
+}
+
+.show {
+    animation: show 0.2s ease forwards;
+}
+
+.hide {
+    animation: hide 0.2s ease forwards;
+}
+
+.heightHide {
+    height: 0;
+}
+
+/* debug */
+.beaconList {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 10000;
+    margin: 0;
+    padding: 0;
+}
+
+.beaconList li {
+    height: 45px;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.beaconList li:nth-child(n + 2) {
+    background: #eee;
+}

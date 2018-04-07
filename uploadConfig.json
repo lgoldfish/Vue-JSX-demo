@@ -1,0 +1,7 @@
+{
+  "targetPath": "tianshu",
+  "version": "",
+  "bucket": "palmap-market",
+  "uploadDir": "dist",
+  "baseUrl": "http://his.ipalmap.com"
+}

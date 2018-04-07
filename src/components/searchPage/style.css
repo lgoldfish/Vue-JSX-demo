@@ -1,0 +1,119 @@
+.topSearch {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.topSearch .container {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(71, 82, 102, 0.2);
+    width: 94%;
+    margin: auto;
+}
+
+.topSearch .splitLine {
+    height: 25px;
+    width: 1px;
+    background: #eee;
+}
+
+.topSearch .searchInput {
+    border-radius: 4px;
+    background: url('../../assets/ic_search@2x.png') no-repeat 8px 50%;
+    background-size: 18px 18px;
+    padding-left: 30px;
+    height: 44px;
+    width: 87.5%;
+    border: none;
+    font-size: 15px;
+    
+}
+
+.card {
+    background: #fff;
+    width: 94%;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 2px 0 rgba(71, 82, 102, 0.2);
+    padding: 10px 0;
+}
+
+
+.card .item {
+    width: 25%;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.card .item img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.historySearch {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.historySearch .title {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #9098b8;
+    border-bottom: 1px solid #dce2ee;
+}
+
+.historySearch .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.historySearch .list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: 1px solid #dce2ee;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #6e768f;
+   
+}
+
+.historySearch .close {
+    width: 20px;
+    height: 20px;
+}
+
+.historySearch .list .leftContainer {
+    display: inline-flex;
+    align-items: center;
+}
+
+.historySearch .leftContainer img {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.historySearch .operate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9098b8;
+    font-size: 14px;
+    height: 40px;
+}
